@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JW 字幕擷取器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>JW 字幕擷取器</h1>
+        <p>貼上 JW 影片網址，直接提取、過濾並複製純中文字幕</p>
+    </header>
+
+    <main>
+        <div class="input-card">
+            <div class="input-group">
+                <input id="videoUrl" type="url" placeholder="請貼上 JW 影片分享網址">
+                <button id="extractBtn">擷取字幕</button>
+            </div>
+        </div>
+
+        <section id="resultSection" class="result-section" style="display: none;">
+            <div class="action-bar">
+                <button id="copyBtn" class="copy-btn">📋 複製全部文字</button>
+            </div>
+            
+            <div class="preview-card">
+                <h2 id="videoTitleDisplay" class="video-title">🎬 影片標題載入中...</h2>
+                <hr class="title-divider">
+                <h3>📋 純字幕預覽</h3>
+                <pre id="subtitlePreview">這裡將會顯示字幕內容...</pre>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

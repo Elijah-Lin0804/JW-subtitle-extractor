@@ -1,0 +1,147 @@
+body {
+    font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+    /* 改為清爽的淺米灰背景 */
+    background-color: #f4f6f9;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 標題改為穩重的靛藍色 */
+h1 { color: #1e3a8a; }
+
+header p {
+    color: #666666;
+    font-size: 14px;
+}
+
+.input-card {
+    /* 卡片改為純白底色配上柔和陰影 */
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+input[type="url"] {
+    flex: 1;
+    min-width: 280px;
+    padding: 12px;
+    /* 輸入框改為淺灰底、深字 */
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    color: #1e293b;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input[type="url"]:focus {
+    outline: none;
+    border-color: #3b82f6; /* 聚焦時變成亮藍色邊框 */
+    background: #ffffff;
+}
+
+button {
+    padding: 12px 24px;
+    /* 擷取按鈕採用專業的商務藍 */
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.result-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.action-bar {
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+/* 複製按鈕採用舒適的薄荷森林綠 */
+.copy-btn {
+    background-color: #059669;
+    box-shadow: 0 2px 4px rgba(5, 150, 105, 0.2);
+}
+
+.copy-btn:hover {
+    background-color: #047857;
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+}
+
+.preview-card {
+    /* 預覽卡片改為純白 */
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+}
+
+/* 影片標題改為質感的深藍色 */
+.video-title {
+    color: #0f172a;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title-divider {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0; /* 淺色分隔線 */
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #94a3b8;
+    font-size: 13px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    /* 字幕文字區改為文青風的淺象牙白底色，搭配深色文字 */
+    background: #f8fafc;
+    border: 1px solid #f1f5f9;
+    padding: 20px;
+    border-radius: 6px;
+    max-height: 500px;
+    overflow-y: auto;
+    font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #334155; /* 舒適深灰字，比純黑更耐看 */
+}
